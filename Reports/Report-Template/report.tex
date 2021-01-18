@@ -1,0 +1,98 @@
+% File project.tex
+%% Style files for ACL 2021
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{acl2021}
+\usepackage{times}
+\usepackage{booktabs}
+\usepackage{todonotes}
+\usepackage{latexsym}
+\renewcommand{\UrlFont}{\ttfamily\small}
+
+% This is not strictly necessary, and may be commented out,
+% but it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+\aclfinalcopy 
+
+\newcommand\BibTeX{B\textsc{ib}\TeX}
+
+\title{11-777 Spring 2021 Class Project}
+
+\author{
+  First Last 1\thanks{\hspace{4pt}Everyone Contributed Equally -- Alphabetical order} \hspace{2em} First Last 2$^*$ \hspace{2em} First Last 3$^*$ \hspace{2em} First Last 4$^*$ \\
+  \texttt{\{ID1, ID2, ID3, ID4\}@andrew.cmu.edu}
+  }
+
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Template for 11-777 Reports using the ACL 2021 Style File 
+\end{abstract}
+
+\section{Introduction and Problem Definition (1-1.25 pages)}
+\textbf{Thesis statement or Hypothesis we are aiming to prove}\\
+``Our approach is better is not a hypothesis"
+\begin{figure}
+\missingfigure[figwidth=\linewidth]{This is a simple example/demonstration figure that explains your task and insight}
+\end{figure}
+
+\clearpage
+\section{Related Work and Background (1-1.5 pages)}
+\paragraph{Literature 1}
+\paragraph{Literature 2}
+\paragraph{Literature 3}
+\paragraph{Literature 4}
+
+\clearpage
+\section{Task Setup and Data (1 page)}
+\subsection{Task formulation}
+\subsection{Dataset Statistics}
+\subsection{Metrics}
+
+\clearpage
+\section{Models (2 pages)}
+
+\subsection{Baselines}
+Both existing baselines explained with citations and novel ones missing from the current literature
+
+\subsection{Proposed Approach}
+
+\clearpage
+\begin{table*}[t]
+\centering
+\begin{tabular}{lrrrr}
+\toprule
+                            & \multicolumn{2}{c}{Dev} & \multicolumn{2}{c}{Test}\\
+Methods                     & Accuracy $\uparrow$ & $L_2$ Error $\downarrow$ & Accuracy $\uparrow$ & $L_2$ Error $\downarrow$ \\
+\midrule
+Previous Approach 1 \cite{} & & & & \\
+Previous Approach 2 \cite{} & & & & \\
+Previous Approach 3 \cite{} & & & & \\
+\midrule
+Proposed Method             & & & & \\
+\bottomrule
+\end{tabular}
+\end{table*}
+\section{Results (1 page)}
+The columns above are just examples that should be expanded to include all metrics and baselines.
+
+\clearpage
+\section{Analysis (2 pages)}
+This section should include at least two to three plots
+\subsection{Ablations and Their Implications}
+
+\subsection{Qualitative Analysis and Examples}
+This section should likely contain a table of examples demonstrating how the current approach succeeds/fails.
+
+% Please use 
+\bibliographystyle{acl_natbib}
+\bibliography{references}
+
+%\appendix
+
+
+
+\end{document}
