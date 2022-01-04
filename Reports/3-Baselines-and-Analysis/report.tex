@@ -1,0 +1,127 @@
+% File project.tex
+%% Style files for ACL 2021
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{acl2021}
+\usepackage{times}
+\usepackage{booktabs}
+\usepackage{todonotes}
+\usepackage{latexsym}
+\renewcommand{\UrlFont}{\ttfamily\small}
+
+% This is not strictly necessary, and may be commented out,
+% but it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+\aclfinalcopy 
+
+\newcommand\BibTeX{B\textsc{ib}\TeX}
+
+\title{Baselines and Analysis}
+
+\author{
+  First Last 1\thanks{\hspace{4pt}Everyone Contributed Equally -- Alphabetical order} \hspace{2em} First Last 2$^*$ \hspace{2em} First Last 3$^*$ \hspace{2em} First Last 4$^*$ \\
+  \texttt{\{ID1, ID2, ID3, ID4\}@andrew.cmu.edu}
+  }
+
+\date{}
+
+\begin{document}
+\maketitle
+\section{Models (2 pages)}
+Please explain the baselines you are using. This includes (but is not limited to):
+\begin{enumerate}
+  \item Unimodal baselines
+  \item Very simple multimodal models  
+  \item Alternate choices for modules (e.g. encoders/decoders)
+\end{enumerate}
+
+\subsection{Unimodal Baselines}
+We include the following unimodal baselines: ... we expect these to capture ...
+
+\subsection{Simple Multimodal Baselines}
+We include a very simple multimodal baseline that ... ignores history... doesn't have attention ... doesn't require pretraining ....
+
+\subsection{Competitive Baselines}
+We run $N$ competitive baselines available at public repos.  These include: 
+\begin{enumerate}
+  \item System 1 is a ... whose key insight is ... 
+  \item System 2 is a ... whose key insight is ... 
+  \item System 3 is a ... whose key insight is ... 
+\end{enumerate}
+
+\clearpage
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}lrr@{}}
+\toprule
+                            & \multicolumn{2}{c}{Dev} \\
+Methods                     & Accuracy $\uparrow$ & $L_2$ Error $\downarrow$  \\
+\midrule
+Unimodal 1 \cite{} & & \\
+Unimodal 2 \cite{} & & \\
+Unimodal 3 \cite{} & & \\
+\midrule
+Simple Multimodal 1 \cite{} & & \\
+Simple Multimodal 2 \cite{} & & \\
+Simple Multimodal 3 \cite{} & & \\
+\midrule
+Previous Approach 1 \cite{} & & \\
+Previous Approach 2 \cite{} & & \\
+Previous Approach 3 \cite{} & & \\
+\bottomrule
+\end{tabular}
+\end{table}
+\section{Results (1 page)}
+Replace columns with the correct metrics for your task (extrinsic).
+
+\clearpage
+\section{Analysis (2 pages)}
+This section should include plots.  For example, how key metrics vary with a specific hyperparameter, task complexity, etc.
+
+\subsection{Intrinsic Metrics}
+These are not the task itself (they might overlap with auxiliary losses) but are skills the model should have.
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}lrr@{}}
+\toprule
+                            & \multicolumn{2}{c}{Dev} \\
+Methods                     & Detections $\uparrow$ & Invalid Actions $\downarrow$  \\
+\midrule
+Unimodal 1 \cite{} & & \\
+Unimodal 2 \cite{} & & \\
+Unimodal 3 \cite{} & & \\
+\midrule
+Simple Multimodal 1 \cite{} & &  \\
+Simple Multimodal 2 \cite{} & &  \\
+Simple Multimodal 3 \cite{} & &  \\
+\midrule
+Previous Approach 1 \cite{} & &  \\
+Previous Approach 2 \cite{} & &  \\
+Previous Approach 3 \cite{} & &  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+\subsection{Qualitative Analysis and Examples (full page table)}
+A full page table that includes: Example input, comparison of model outputs, theory about reason for failure. Every model presented should have at least one failure condition
+
+\clearpage
+\section{Team member contributions}
+\paragraph{Member 1} contributed ...
+
+\paragraph{Member 2} contributed ...
+
+\paragraph{...} contributed ...
+
+
+% Please use 
+\bibliographystyle{acl_natbib}
+\bibliography{references}
+
+%\appendix
+
+
+
+\end{document}

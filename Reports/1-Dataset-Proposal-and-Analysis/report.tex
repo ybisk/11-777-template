@@ -1,0 +1,88 @@
+% File project.tex
+%% Style files for ACL 2021
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{acl2021}
+\usepackage{times}
+\usepackage{booktabs}
+\usepackage{todonotes}
+\usepackage{latexsym}
+\renewcommand{\UrlFont}{\ttfamily\small}
+
+% This is not strictly necessary, and may be commented out,
+% but it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+\aclfinalcopy 
+
+\newcommand\BibTeX{B\textsc{ib}\TeX}
+
+\title{11-777 Report 1: Dataset Proposal and Analysis}
+
+\author{
+  First Last 1\thanks{\hspace{4pt}Everyone Contributed Equally -- Alphabetical order} \hspace{2em} First Last 2$^*$ \hspace{2em} First Last 3$^*$ \hspace{2em} First Last 4$^*$ \\
+  \texttt{\{ID1, ID2, ID3, ID4\}@andrew.cmu.edu}
+  }
+
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Problem Definition and Dataset Choice (1 page)}
+If you are choosing a dataset not listed on the course website, this section should be long enough to justify that you are qualified for your choice.  This may mean a second page.
+
+\subsection{What phenomena or task does this dataset help address?}
+\subsection{What about this task is fundamentally multimodal?}
+\subsection{Hypothesis}
+We believe there are three places cross-modal information can be used or imporoved
+  \begin{enumerate}
+    \item ...
+    \item ...
+    \item ...
+  \end{enumerate}
+\subsection{Expertise}
+We have the following expertise in the underlying modalities required by this task:
+  \begin{enumerate}
+      \item Team member 1: Research paper in CV, ...
+      \item Team member 2: Took NLP in Fall 2021, ...
+      \item ...
+  \end{enumerate}
+
+\clearpage
+\section{Dataset Analysis (1 page)}
+\subsection{Dataset properties} (GBs, framerate, physical hardware platform, ...)
+\subsection{Compute Requirements}
+  \begin{enumerate}
+    \item Files (can fit in RAM?)
+    \item Models (can fit on GCP/AWS GPUs?)
+  \end{enumerate}
+\subsection{Modality analysis}
+(use a small sample -- e.g. validation splits):
+  \begin{enumerate}
+    \item Lexical diversity, sentence length, ...
+    \item Average number of objects detected per image
+    \item Degrees of freedom, number of articulated objects, ...
+  \end{enumerate}
+\subsection{Metrics used}
+\subsection{Baselines} 
+Four papers that have worked on this dataset
+
+\clearpage
+\section{Team member contributions}
+\paragraph{Member 1} contributed ...
+
+\paragraph{Member 2} contributed ...
+
+\paragraph{...} contributed ...
+
+\clearpage
+% Please use 
+\bibliographystyle{acl_natbib}
+\bibliography{references}
+
+%\appendix
+
+
+
+\end{document}

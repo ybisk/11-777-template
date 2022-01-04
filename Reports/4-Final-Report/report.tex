@@ -1,0 +1,144 @@
+% File project.tex
+%% Style files for ACL 2021
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{acl2021}
+\usepackage{times}
+\usepackage{booktabs}
+\usepackage{todonotes}
+\usepackage{latexsym}
+\renewcommand{\UrlFont}{\ttfamily\small}
+
+% This is not strictly necessary, and may be commented out,
+% but it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+\aclfinalcopy 
+
+\newcommand\BibTeX{B\textsc{ib}\TeX}
+
+\title{11-777 Final Report}
+
+\author{
+  First Last 1\thanks{\hspace{4pt}Everyone Contributed Equally -- Alphabetical order} \hspace{2em} First Last 2$^*$ \hspace{2em} First Last 3$^*$ \hspace{2em} First Last 4$^*$ \\
+  \texttt{\{ID1, ID2, ID3, ID4\}@andrew.cmu.edu}
+  }
+
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+In this project we introduce ... to tackle... we show that ...
+\end{abstract}
+
+\section{Introduction and Problem Definition (1-1.25 pages)}
+This will be about 1 page, might include a figure on the top right and lays out the contributions.
+
+\clearpage
+\section{Related Work and Background}
+Integrate your previous report here
+
+\clearpage
+\section{Task Setup and Data}
+Integrate your previous report here
+
+\clearpage
+\section{Baselines}
+Integrate your previous report here
+
+\clearpage
+\section{Proposed Model (>1 page)}
+This is not a copy and page from R2, it should be updated to reflect the final proposed model. Explain if there are multiple versions (e.g. your model has possible extensions, different amounts of exemplars, etc).  Please also include an easy to read model diagram here.
+
+\subsection{Loss functions}
+
+\subsection{Changes to training data}
+
+\subsection{Hyperparameters and their effects}
+
+\clearpage
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}lrr@{}}
+\toprule
+                            & \multicolumn{2}{c}{Dev} \\
+Methods                     & Accuracy $\uparrow$ & $L_2$ Error $\downarrow$  \\
+\midrule
+Unimodal 1 \cite{} & & \\
+Unimodal 2 \cite{} & & \\
+Unimodal 3 \cite{} & & \\
+\midrule
+Simple Multimodal 1 \cite{} & & \\
+Simple Multimodal 2 \cite{} & & \\
+Simple Multimodal 3 \cite{} & & \\
+\midrule
+Previous Approach 1 \cite{} & & \\
+Previous Approach 2 \cite{} & & \\
+Previous Approach 3 \cite{} & & \\
+\midrule
+Proposed Method (v1)            & & \\
+Proposed Method (v2)            & & \\
+Proposed Method (final)            & & \\
+\bottomrule
+\end{tabular}
+\end{table}
+\section{Results (1 page)}
+Replace columns with the correct metrics for your task (extrinsic). Include multiple versions of your final model.  You do not need to run on the test set but are encouraged to try if you have nice results on Dev.
+
+\clearpage
+\section{Analysis (2 pages)}
+This section should include plots.  For example, how key metrics vary with a specific hyperparameter, task complexity, etc.
+
+\subsection{Intrinsic Metrics}
+These are not the task itself (they might overlap with auxiliary losses) but are skills the model should have.
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}lrr@{}}
+\toprule
+                            & \multicolumn{2}{c}{Dev} \\
+Methods                     & Detections $\uparrow$ & Invalid Actions $\downarrow$  \\
+\midrule
+Unimodal 1 \cite{} & & \\
+Unimodal 2 \cite{} & & \\
+Unimodal 3 \cite{} & & \\
+\midrule
+Simple Multimodal 1 \cite{} & &  \\
+Simple Multimodal 2 \cite{} & &  \\
+Simple Multimodal 3 \cite{} & &  \\
+\midrule
+Previous Approach 1 \cite{} & &  \\
+Previous Approach 2 \cite{} & &  \\
+Previous Approach 3 \cite{} & &  \\
+\midrule
+Proposed Method             & &  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+\subsection{Qualitative Analysis and Examples (full page table)}
+A full page table that includes: Example input, comparison of model outputs, theory about reason for failure. Every model presented should have at least one failure condition
+
+\clearpage
+\section{Future work and Limitations (0.5-1 page)}
+Please thorough discuss the limitations of the proposed model.  Where are all the places it does not work, phenomena it does not capture, places that ideally it can be improved.
+
+\clearpage
+\section{Team member contributions}
+\paragraph{Member 1} contributed ...
+
+\paragraph{Member 2} contributed ...
+
+\paragraph{...} contributed ...
+
+
+% Please use 
+\bibliographystyle{acl_natbib}
+\bibliography{references}
+
+%\appendix
+
+
+
+\end{document}
