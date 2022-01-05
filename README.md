@@ -8,6 +8,7 @@ Please create a *private* fork or copy of this repo and invite me and your team'
 TAs
 - Yuchen Xu: [yuchen-xu](https://github.com/yuchen-xu)
 - Ta-Chung Chi: [chijames](https://github.com/chijames)
+- Hyukjae (Alex) Kwark: [chorongi](https://github.com/chorongi)
 - Li-Wei Chen: [b04901014](https://github.com/b04901014)
 - Dong Won Lee: [dondongwon](https://github.com/dondongwon)
 
