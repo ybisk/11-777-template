@@ -37,14 +37,19 @@ Please explain the baselines you are using. This includes (but is not limited to
   \item Alternate choices for modules (e.g. encoders/decoders)
 \end{enumerate}
 
+(Explain all your choices and what types of interactions exist. What can a simple detector figure out of about the task? What can an LM infer from the prompt? What if I just pass detections to a model... -- you implement 2*N baselines -- these can use pretrained encoders/detectors)
+
 \subsection{Unimodal Baselines}
-We include the following unimodal baselines: ... we expect these to capture ...
+We include the following unimodal baselines: ... we expect these to capture ... (these are implemented by the group)
 
 \subsection{Simple Multimodal Baselines}
 We include a very simple multimodal baseline that ... ignores history... doesn't have attention ... doesn't require pretraining ....
+(these are implemented by the group)
 
 \subsection{Competitive Baselines}
 We run $N$ competitive baselines available at public repos.  These include: 
+(these are models you found in the literature, github, etc with existing checheckpoints -- no training. You should be able to run these so you can do analysis on them in R3.  Additionally, they need to be rerun if you've done your own data sampling)
+
 \begin{enumerate}
   \item System 1 is a ... whose key insight is ... 
   \item System 2 is a ... whose key insight is ... 
