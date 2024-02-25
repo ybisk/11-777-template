@@ -17,7 +17,7 @@
 
 \newcommand\BibTeX{B\textsc{ib}\TeX}
 
-\title{Baselines and Analysis}
+\title{11-777 Report 2: Baselines and Model Proposal}
 
 \author{
   First Last 1\thanks{\hspace{4pt}Everyone Contributed Equally -- Alphabetical order} \hspace{2em} First Last 2$^*$ \hspace{2em} First Last 3$^*$ \hspace{2em} First Last 4$^*$ \\
@@ -28,7 +28,8 @@
 
 \begin{document}
 \maketitle
-\section{Models (2 pages)}
+
+\section{Baseline Models and Metrics (2 pages)}
 Please explain the baselines you are using. This includes (but is not limited to):
 \begin{enumerate}
   \item Unimodal baselines
@@ -73,39 +74,28 @@ Previous Approach 3 \cite{} & & \\
 \end{tabular}
 \end{table}
 \section{Results (1 page)}
-Replace columns with the correct metrics for your task (extrinsic).
+Replace columns with the correct metrics for your task (extrinsic). What are 
+all the things you can measure, and why are they beneficial?
+\paragraph{Metric 1}
+
+\paragraph{Metric 2}
+
+\paragraph{Metric 3}
+
 
 \clearpage
-\section{Analysis (2 pages)}
-This section should include plots.  For example, how key metrics vary with a specific hyperparameter, task complexity, etc.
+\section{Model Proposal (1 page)}
+Include a diagram (e.g. labeled flow chart) of all modules.  This is not final!
 
-\subsection{Intrinsic Metrics}
-These are not the task itself (they might overlap with auxiliary losses) but are skills the model should have.
-\begin{table}[t]
-\centering
-\begin{tabular}{@{}lrr@{}}
-\toprule
-                            & \multicolumn{2}{c}{Dev} \\
-Methods                     & Detections $\uparrow$ & Invalid Actions $\downarrow$  \\
-\midrule
-Unimodal 1 \cite{} & & \\
-Unimodal 2 \cite{} & & \\
-Unimodal 3 \cite{} & & \\
-\midrule
-Simple Multimodal 1 \cite{} & &  \\
-Simple Multimodal 2 \cite{} & &  \\
-Simple Multimodal 3 \cite{} & &  \\
-\midrule
-Previous Approach 1 \cite{} & &  \\
-Previous Approach 2 \cite{} & &  \\
-Previous Approach 3 \cite{} & &  \\
-\bottomrule
-\end{tabular}
-\end{table}
+\subsection{Overall model structure}
 
-\clearpage
-\subsection{Qualitative Analysis and Examples (full page table)}
-A full page table that includes: Example input, comparison of model outputs, theory about reason for failure. Every model presented should have at least one failure condition
+\subsection{Encoders}
+Describe encoders for each modality and at least one alternatives for each.  Explain the relative strengths of each option (e.g. coverage, efficiency, ...)
+
+\subsection{Decoders}
+
+\subsection{Loss Functions}
+Describe both your primary task loss and three possible auxiliary losses that might improve performance.  Justify your choices.
 
 \clearpage
 \section{Team member contributions}
